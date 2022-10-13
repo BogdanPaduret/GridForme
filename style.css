@@ -1,0 +1,86 @@
+.icon{
+    width: 20px;
+}
+
+header{
+    /* border: 1px solid black; */
+}
+main{
+    /* border: 1px solid red; */
+    background-color: #faf6ed;
+
+}
+footer{
+    border: 1px solid blue;
+}
+
+
+.main{
+    grid-area: mjs;
+}
+.js-libraries{
+    grid-area: jsl;
+}
+
+.node-js{
+    grid-area: njs;
+}
+.js-framework{
+    grid-area: jsf;
+}
+.bt-ws{
+    grid-area: btw;
+}
+.npm{
+    grid-area: npm;
+}
+.express-ws{
+    grid-area: ews;
+}
+
+.container{
+    display: grid;
+    gap: 15px;
+    margin: 0px 100px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "mjs mjs"
+    "jsl njs"
+    "jsf btw"
+    "npm ews";
+}
+.item.lvl1{
+    box-sizing:border-box;
+
+    background-color: #fefdf9;
+    border: 1px solid #dad7d2;
+    border-radius: 2px;
+    padding: 15px 0px 0px 0px;
+    
+    display: grid;
+    grid-template-columns: 40px 1fr 60px;
+    grid-template-areas:
+    "in lb pc"
+    "in dt pr";
+}
+.item.lvl2{
+    /* border: 1px solid magenta; */
+}
+input.item.lvl2{
+    grid-area: in;
+    align-self: flex-start;
+}
+label.item.lvl2{
+    grid-area: lb;
+}
+img.item.lvl2{
+    grid-area: pc;
+    justify-self: center;
+}
+p.item.lvl2.date-time{
+    grid-area: dt;
+}
+p.item.lvl2.price{
+    grid-area: pr;
+    text-align: center;
+}
