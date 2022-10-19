@@ -11,63 +11,148 @@
 
 <body>
     <header>
-        <h1>Register for Activities</h1>
+        <p>Register for</p>
+        <h1>Full Stack Conference</h1>
     </header>
-    <main class="container">
-        <section class="main item lvl1">
-            <input class="item lvl2" type="checkbox" id="mjs-cb">
-            <label class="item lvl2" for="mjs-cb">Main Conference</label>
-            <img class="icon item lvl2" src="pictures/js.svg" alt="js">
-            <p class="item lvl2 date-time"></p>
-            <p class="item lvl2 price">$200</p>
+
+    <main>
+        <section class="main-item main-legend asterisk-container">
+            <img class="asterisk" src="pictures/asterisk.png" alt="*">
+            <p class="asterisk-item">required field</p>
         </section>
 
-        <section class="js-libraries item lvl1">
-            <input class="item lvl2 checkbox" type="checkbox" id="jsl-cb">
-            <label class="item lvl2 label" for="jsl-cb">JavaScript Libraries Workshop</label>
-            <img class="icon item lvl2" src="pictures/react.svg" alt="react">
-            <p class="item lvl2 date-time">Tuesday 9am-12pm</p>
-            <p class="item lvl2 price">$100</p>
+        <section class="main-item main-info">
+            <h2 class="item info title">Basic Info</h2>
+
+            <h2 class="item shirt title">T-Shirt Info</h2>
+
+            <section class="item info name">
+                <!-- name -->
+                <div class="asterisk-container label">
+                    <img class="asterisk" src="pictures/asterisk.png" alt="*">
+                    <label class="asterisk-item" for="name">Name:</label>
+                </div>
+                <input id="name" type="text" name="name">
+            </section>
+        
+            <section class="item info email">
+                <!-- email -->
+                <div class="asterisk-container label">
+                    <img class="asterisk" src="pictures/asterisk.png" alt="*">
+                    <label class="asterisk-item" for="email">Email Address:</label>
+                </div>
+                <input id="email" type="text" name="email">
+            </section>
+        
+            <section class="item info job-role">
+                <!-- job role -->
+                <label class="label" for="job">Job Role</label>
+                <select name="job-role" id="job">
+                    <option value="" selected disabled>Select Job Role</option>
+                </select>
+            </section>
+        
+            <section class="item shirt size">
+                <!-- size -->
+                <label class="label" for="size">Size:</label>
+                <select name="size" id="size">
+                    <option value="s">S</option>
+                    <option value="m" selected>M</option>
+                    <option value="l">L</option>
+                </select>
+            </section>
+        
+            <section class="item shirt design">
+                <!-- design -->
+                <label class="label" for="design">Design:</label>
+                <select name="design" id="design">
+                    <option value="" disabled selected>Select theme</option>
+                </select>
+            </section>
+        
+            <section class="item shirt color">
+                <!-- color -->
+                <label class="label" for="color">Color:</label>
+                <select name="color" id="color">
+                    <option value="" disabled selected>Select design theme above</option>
+                </select>
+            </section>
+        
+            <section class="item info job-other">
+                <!-- other job -->
+                <label class="label" for="other-job-role"></label>
+                <input type="text" id="other-job-role" placeholder="Other job role?">
+            </section>
+        
         </section>
 
-        <section class="node-js item lvl1">
-            <input class="item lvl2" type="checkbox" id="njs-cb">
-            <label class="item lvl2" for="njs-cb">Node.js Workshop</label>
-            <img class="icon item lvl2" src="pictures/node.svg" alt="node">
-            <p class="item lvl2 date-time">Tuesday 1pm-4pm</p>
-            <p class="item lvl2 price">$100</p>
+        <section class="main-item main-courses">
+            <div class="asterisk-container title">
+                <h2 class="asterisk-item">Register for Activities</h2>
+                <img class="asterisk" src="pictures/asterisk.png" alt="*">
+            </div>
+
+            <div class="container">
+                <section class="main item lvl1">
+                    <input class="item lvl2" type="checkbox" id="mjs-cb">
+                    <label class="item lvl2" for="mjs-cb">Main Conference</label>
+                    <img class="icon item lvl2" src="pictures/js.svg" alt="js">
+                    <p class="item lvl2 date-time"></p>
+                    <p class="item lvl2 price">$200</p>
+                </section>
+            
+                <section class="js-libraries item lvl1">
+                    <input class="item lvl2 checkbox" type="checkbox" id="jsl-cb">
+                    <label class="item lvl2 label" for="jsl-cb">JavaScript Libraries Workshop</label>
+                    <img class="icon item lvl2" src="pictures/react.svg" alt="react">
+                    <p class="item lvl2 date-time">Tuesday 9am-12pm</p>
+                    <p class="item lvl2 price">$100</p>
+                </section>
+            
+                <section class="node-js item lvl1">
+                    <input class="item lvl2" type="checkbox" id="njs-cb">
+                    <label class="item lvl2" for="njs-cb">Node.js Workshop</label>
+                    <img class="icon item lvl2" src="pictures/node.svg" alt="node">
+                    <p class="item lvl2 date-time">Tuesday 1pm-4pm</p>
+                    <p class="item lvl2 price">$100</p>
+                </section>
+            
+                <section class="js-framework item lvl1">
+                    <input class="item lvl2" type="checkbox" id="jsf-cb">
+                    <label class="item lvl2" for="jsf-cb">JavaScript Frameworks Workshop</label>
+                    <img class="icon item lvl2" src="pictures/angular.svg" alt="angular">
+                    <p class="item lvl2 date-time">Tuesday 9am-12pm</p>
+                    <p class="item lvl2 price">$100</p>
+                </section>
+            
+                <section class="bt-ws item lvl1">
+                    <input class="item lvl2" type="checkbox" id="btw-cb">
+                    <label class="item lvl2" for="btw-cb">Build tools Workshop</label>
+                    <img class="icon item lvl2" src="pictures/build.svg" alt="build">
+                    <p class="item lvl2 date-time">Tuesday 1pm-4pm</p>
+                    <p class="item lvl2 price">$100</p>
+                </section>
+            
+                <section class="npm item lvl1">
+                    <input class="item lvl2" type="checkbox" id="npm-cb">
+                    <label class="item lvl2" for="npm-cb">npm Workshop</label>
+                    <img class="icon item lvl2" src="pictures/npm.svg" alt="npm">
+                    <p class="item lvl2 date-time">Wednesday 9am-12pm</p>
+                    <p class="item lvl2 price">$100</p>
+                </section>
+            
+                <section class="express-ws item lvl1">
+                    <input class="item lvl2" type="checkbox" id="ews-cb">
+                    <label class="item lvl2" for="ews-cb">Express Workshop</label>
+                    <img class="icon item lvl2" src="pictures/express.svg" alt="express">
+                    <p class="item lvl2 date-time">Wednesday 1pm-4pm</p>
+                    <p class="item lvl2 price">$100</p>
+                </section>
+            </div>
         </section>
 
-        <section class="js-framework item lvl1">
-            <input class="item lvl2" type="checkbox" id="jsf-cb">
-            <label class="item lvl2" for="jsf-cb">JavaScript Frameworks Workshop</label>
-            <img class="icon item lvl2" src="pictures/angular.svg" alt="angular">
-            <p class="item lvl2 date-time">Tuesday 9am-12pm</p>
-            <p class="item lvl2 price">$100</p>
-        </section>
+        <section class="main-item main-payment">
 
-        <section class="bt-ws item lvl1">
-            <input class="item lvl2" type="checkbox" id="btw-cb">
-            <label class="item lvl2" for="btw-cb">Build tools Workshop</label>
-            <img class="icon item lvl2" src="pictures/build.svg" alt="build">
-            <p class="item lvl2 date-time">Tuesday 1pm-4pm</p>
-            <p class="item lvl2 price">$100</p>
-        </section>
-
-        <section class="npm item lvl1">
-            <input class="item lvl2" type="checkbox" id="npm-cb">
-            <label class="item lvl2" for="npm-cb">npm Workshop</label>
-            <img class="icon item lvl2" src="pictures/npm.svg" alt="npm">
-            <p class="item lvl2 date-time">Wednesday 9am-12pm</p>
-            <p class="item lvl2 price">$100</p>
-        </section>
-
-        <section class="express-ws item lvl1">
-            <input class="item lvl2" type="checkbox" id="ews-cb">
-            <label class="item lvl2" for="ews-cb">Express Workshop</label>
-            <img class="icon item lvl2" src="pictures/express.svg" alt="express">
-            <p class="item lvl2 date-time">Wednesday 1pm-4pm</p>
-            <p class="item lvl2 price">$100</p>
         </section>
     </main>
 </body>
